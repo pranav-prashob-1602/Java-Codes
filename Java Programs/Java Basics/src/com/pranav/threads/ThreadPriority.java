@@ -10,7 +10,6 @@ class P extends Thread {
 public class ThreadPriority {
 
 	public static void main(String[] args) {
-		
 		/*
 		 * 
 		 * DEFAULT PRIORITY IS 5.
