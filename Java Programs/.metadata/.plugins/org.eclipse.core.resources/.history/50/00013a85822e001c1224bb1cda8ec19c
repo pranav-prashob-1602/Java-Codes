@@ -1,0 +1,7 @@
+package com.pranav.exception;
+
+public class ExceptionB extends ExceptionA {
+	void fun() {
+		System.out.println("HI");
+	}
+}

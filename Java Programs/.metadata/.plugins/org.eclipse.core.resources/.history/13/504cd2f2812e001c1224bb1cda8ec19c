@@ -1,0 +1,10 @@
+package com.pranav.exception;
+
+public class ExceptionRunner {
+
+	public static void main(String[] args) {
+		ExceptionB b = new ExceptionB();
+		b.fun();
+	}
+
+}
