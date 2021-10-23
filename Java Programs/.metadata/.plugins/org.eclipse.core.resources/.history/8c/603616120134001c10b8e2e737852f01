@@ -1,7 +1,6 @@
 package com.pranav.collection;
 
 import java.util.*;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Collection1 {
 
@@ -42,23 +41,12 @@ public class Collection1 {
 		q.add("A");
 		q.add("B");
 		q.add("C");
-		List<String> l = new CopyOnWriteArrayList<String>();
-		l.addAll(q);
-		Iterator it2 = l.iterator();
-		while(it2.hasNext()) {
-			String s = (String)it2.next();
-			System.out.println(s);
-			l.remove("A");
-//			it2.remove();		it will give UnsupportedOperationException
-		}
-		System.out.println(l.toString());
 		Iterator it1 = q.iterator();
 		while(it1.hasNext()) {
 			String s = (String)it1.next();
 			System.out.println(s);
-			q.remove("A");
+			it1.remove();
 		}
-		System.out.println(q.toString());
 //		System.out.println(c.toString());
 		
 //		Collection d = new Collection();

@@ -48,8 +48,7 @@ public class Collection1 {
 		while(it2.hasNext()) {
 			String s = (String)it2.next();
 			System.out.println(s);
-			l.remove("A");
-//			it2.remove();		it will give UnsupportedOperationException
+			it2.remove();
 		}
 		System.out.println(l.toString());
 		Iterator it1 = q.iterator();

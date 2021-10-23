@@ -1,0 +1,40 @@
+package com.pranav.collection;
+
+import java.util.*;
+
+public class Collection1 {
+
+	public static void main(String[] args) {
+		List c = new ArrayList();
+		c.add(5);
+		c.add("Pranav");
+		c.add('d');
+		c.add(1e9);
+		c.add(2, "Jigar");
+		List d = new ArrayList();
+		d.add("igi");
+		d.add('a');
+		d.add(3);
+		Iterator it  = c.iterator();
+		while(it.hasNext()) {
+			Object o = it.next();
+			System.out.print(o+" ");
+		}
+		c.addAll(d);
+		System.out.println();
+		for(Object e : c) {
+			System.out.print(e+" ");
+		}
+		System.out.println();
+		c.set(2, 5);
+		for(int i=0;i<c.size();i++) {
+			System.out.print(c.get(i)+" ");
+		}
+		System.out.println();
+//		System.out.println(c.toString());
+		
+//		Collection d = new Collection();
+		
+	}
+
+}

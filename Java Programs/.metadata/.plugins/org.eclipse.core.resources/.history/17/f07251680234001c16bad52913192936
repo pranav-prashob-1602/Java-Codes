@@ -44,19 +44,17 @@ public class Collection1 {
 		q.add("C");
 		List<String> l = new CopyOnWriteArrayList<String>();
 		l.addAll(q);
+//		Iterator it1 = q.iterator();
+//		while(it1.hasNext()) {
+//			String s = (String)it1.next();
+//			System.out.println(s);
+//			q.remove("A");
+//		}
 		Iterator it2 = l.iterator();
 		while(it2.hasNext()) {
 			String s = (String)it2.next();
 			System.out.println(s);
 			l.remove("A");
-//			it2.remove();		it will give UnsupportedOperationException
-		}
-		System.out.println(l.toString());
-		Iterator it1 = q.iterator();
-		while(it1.hasNext()) {
-			String s = (String)it1.next();
-			System.out.println(s);
-			q.remove("A");
 		}
 		System.out.println(q.toString());
 //		System.out.println(c.toString());
