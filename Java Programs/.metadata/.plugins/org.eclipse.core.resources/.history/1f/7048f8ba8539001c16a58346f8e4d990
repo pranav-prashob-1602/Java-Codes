@@ -1,0 +1,14 @@
+package com.pranav.misc;
+
+interface B {
+	void print();
+}
+
+public class LambdaExpressions {
+
+	public static void main(String[] args) {
+		B obj=() -> System.out.println("Inside LambdaExpressions");
+		obj.print();
+	}
+
+}

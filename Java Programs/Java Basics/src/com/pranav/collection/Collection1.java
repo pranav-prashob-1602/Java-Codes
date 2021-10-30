@@ -2,6 +2,7 @@ package com.pranav.collection;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.function.Consumer;
 
 public class Collection1 {
 
@@ -21,6 +22,9 @@ public class Collection1 {
 			Object o = it.next();
 			System.out.print(o+" ");
 		}
+		System.out.println();
+//		Consumer a
+		c.forEach(i -> System.out.print(i+" A "));
 		c.addAll(d);
 		System.out.println();
 		for(Object e : c) {
@@ -49,7 +53,7 @@ public class Collection1 {
 			String s = (String)it2.next();
 			System.out.println(s);
 			l.remove("A");
-//			it2.remove();		it will give UnsupportedOperationException
+//			it2.remove();		// it will give UnsupportedOperationException
 		}
 		System.out.println(l.toString());
 		Iterator it1 = q.iterator();

@@ -1,0 +1,23 @@
+package com.pranav.misc;
+
+class Container<T> {
+	T a;
+	
+	Container(T t) {
+		a=t;
+	}
+	
+	void print() {
+		System.out.println(a.getClass().getName());
+	}
+}
+
+public class Generics {
+
+	public static void main(String[] args) {
+		Integer a = new Integer(5);
+		Container<Integer> c = new Container(a);
+		c.print();
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.pranav.misc;
+
+public class Car implements Vehicle{
+
+	public int seat() {
+		return 4;
+	}
+	
+	public static void main(String[] args) {
+		Car c = new Car();
+		c.print();
+	}
+
+}
