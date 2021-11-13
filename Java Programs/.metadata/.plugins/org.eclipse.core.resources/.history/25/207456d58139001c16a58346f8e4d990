@@ -1,7 +1,0 @@
-package com.pranav.misc;
-
-public interface Traffic {
-	
-	coid print()
-	
-}

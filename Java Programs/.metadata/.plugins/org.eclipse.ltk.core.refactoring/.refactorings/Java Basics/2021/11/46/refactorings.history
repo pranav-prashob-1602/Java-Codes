@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.pranav.misc.ConsumeInterfaceRunner&apos; to &apos;ConsumerInterfaceRunner&apos;&#x0D;&#x0A;- Original project: &apos;Java Basics&apos;&#x0D;&#x0A;- Original element: &apos;com.pranav.misc.ConsumeInterfaceRunner&apos;&#x0D;&#x0A;- Renamed element: &apos;com.pranav.misc.ConsumerInterfaceRunner&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ConsumeInterfaceRunner&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.pranav.misc{ConsumeInterfaceRunner.java[ConsumeInterfaceRunner" matchStrategy="1" name="ConsumerInterfaceRunner" qualified="false" references="true" similarDeclarations="false" stamp="1636810518057" textual="false" version="1.0"/>
+</session>
