@@ -1,0 +1,21 @@
+package com.pranav.collection;
+
+import java.util.*;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		Set<Integer> s = new HashSet();
+		s.add(4);
+		s.add(2);
+		s.add(7);
+		for(int i=0;i<4;i++) { 
+			for(Integer e : s) {
+				System.out.print(e+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
