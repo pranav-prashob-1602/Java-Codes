@@ -1,0 +1,15 @@
+package com.pranav.collection;
+
+import java.util.*;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		Map<String, Integer> mp = new HashMap();
+		mp.put("A", 1);
+		mp.put("B", 2);
+		mp.put("C", 3);
+		System.out.println(mp);
+	}
+
+}
