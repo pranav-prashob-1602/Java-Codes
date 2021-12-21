@@ -1,5 +1,0 @@
-package com.pranav.misc;
-
-public interface NestedInterface {
-
-}

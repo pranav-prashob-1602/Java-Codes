@@ -1,7 +1,0 @@
-package com.pranav.misc;
-
-public class NestedInterfaceClass implements NestedInterface.Interface1 {
-	public int val() {
-		return 0;
-	}
-}

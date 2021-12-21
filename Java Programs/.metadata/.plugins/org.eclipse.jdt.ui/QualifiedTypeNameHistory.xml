@@ -19,4 +19,9 @@
 <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
 <fullyQualifiedTypeName name="java.lang.SafeVarargs"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Objects"/>
+<fullyQualifiedTypeName name="com.pranav.misc.NestedInterface.Interface1"/>
+<fullyQualifiedTypeName name="com.pranav.misc.NestedInterfaceClass"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.security.GeneralSecurityException"/>
 </qualifiedTypeNameHistroy>
