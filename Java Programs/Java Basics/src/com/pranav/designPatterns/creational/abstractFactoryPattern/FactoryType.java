@@ -1,5 +1,6 @@
 package com.pranav.designPatterns.creational.abstractFactoryPattern;
 
-public abstract class Device{
-	abstract String getDetails();
+public enum FactoryType {
+	LAPTOPFACTORY,
+	MOBILEFACTORY,
 }

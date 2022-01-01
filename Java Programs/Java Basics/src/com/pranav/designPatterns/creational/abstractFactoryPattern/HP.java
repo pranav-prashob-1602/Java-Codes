@@ -1,6 +1,6 @@
 package com.pranav.designPatterns.creational.abstractFactoryPattern;
 
-public class HP {
+public class HP extends Device{
 	int ram;
 	String name;
 	

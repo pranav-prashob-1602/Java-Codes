@@ -1,6 +1,6 @@
 package com.pranav.designPatterns.creational.abstractFactoryPattern;
 
-public class Motorola {
+public class Motorola extends Device {
 	int ram;
 	String name;
 	

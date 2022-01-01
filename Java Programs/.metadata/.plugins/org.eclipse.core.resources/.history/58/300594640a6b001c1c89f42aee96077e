@@ -9,9 +9,6 @@ public class ClientFactoryRunner {
 		Device d1 = FactoryGenerator.getFactory(FactoryType.LAPTOPFACTORY).getGadgetName(DeviceType.HP);
 		System.out.println(d1.getDetails());
 		
-		Device d2 = FactoryGenerator.getFactory(FactoryType.MOBILEFACTORY).getGadgetName(DeviceType.MOTOROLA);
-		System.out.println(d2.getDetails());
-		
 	}
 
 }

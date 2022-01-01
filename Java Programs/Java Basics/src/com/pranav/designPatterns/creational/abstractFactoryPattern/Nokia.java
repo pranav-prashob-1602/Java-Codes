@@ -1,6 +1,6 @@
 package com.pranav.designPatterns.creational.abstractFactoryPattern;
 
-public class Nokia {
+public class Nokia extends Device{
 	int ram;
 	String name;
 	
