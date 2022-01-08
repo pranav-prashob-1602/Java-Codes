@@ -1,0 +1,5 @@
+package com.pranav.designPatterns.creational.singleton;
+
+public class Singleton {
+
+}

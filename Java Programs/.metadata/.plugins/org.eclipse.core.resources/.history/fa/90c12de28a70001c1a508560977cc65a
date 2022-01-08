@@ -1,0 +1,5 @@
+package com.pranav.designPatterns.creational.prototype;
+
+public class Book {
+	
+}

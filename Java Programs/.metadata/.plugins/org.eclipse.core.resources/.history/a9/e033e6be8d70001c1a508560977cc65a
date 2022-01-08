@@ -1,0 +1,40 @@
+package com.pranav.designPatterns.creational.prototypePattern;
+
+import java.util.ArrayList;
+
+public class BookShop {
+	ArrayList<Book> books;
+	String shopName;
+	
+	public void loadData() {
+		for(int i=0;i<5;i++) {
+			Book b=new Book();
+			b.setId(i);
+			b.setName(i+" hello");
+			books.add(b);
+		}
+		System.out.println(books);
+	}
+	
+	public ArrayList<Book> getBooks() {
+		return books;
+	}
+	
+	public void setBooks(ArrayList<Book> books) {
+		this.books = books;
+	}
+	
+	public String getShopName() {
+		return shopName;
+	}
+	
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+	
+	@Override
+	public String toString() {
+		return "BookShop [books=" + books + ", shopName=" + shopName + "]";
+	}
+	
+}
