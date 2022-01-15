@@ -1,9 +1,0 @@
-package com.pranav.designPatterns.creational.singleton;
-
-public enum MySingleton {
-	INSTANCE;
-	
-	private MySingleton() {
-		System.out.println("we lost to reflection");
-	}
-}

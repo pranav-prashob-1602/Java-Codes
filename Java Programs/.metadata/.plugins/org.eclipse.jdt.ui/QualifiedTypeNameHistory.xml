@@ -26,4 +26,5 @@
 <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.pranav.designPatterns.structural.facadePattern.FoodType"/>
 </qualifiedTypeNameHistroy>
