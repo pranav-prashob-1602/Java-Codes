@@ -1,8 +1,0 @@
-package com.pranav.designPatterns.structural.adapterPattern;
-
-public class School {
-	public static void main(String[] args) {
-		AssignmentWork w = new AssignmentWork();
-		w.writeAssignment("Assignment is boring");
-	}
-}
