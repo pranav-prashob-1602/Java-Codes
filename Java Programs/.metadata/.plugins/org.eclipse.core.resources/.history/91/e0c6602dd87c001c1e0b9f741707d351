@@ -1,6 +1,6 @@
-package com.pranav.designPatterns.structural.facadePattern;
+package com.pranav.assignments.AI;
 
-public class Customer {
+public class Assignment_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
