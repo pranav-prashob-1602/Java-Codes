@@ -1,5 +1,0 @@
-package com.pranav.designPatterns.structural.flyWeightPattern;
-
-public class Truck {
-
-}
