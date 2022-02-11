@@ -1,5 +1,0 @@
-package com.pranav.designPatterns.structural.bridgePattern;
-
-public abstract class Automobile {
-
-}

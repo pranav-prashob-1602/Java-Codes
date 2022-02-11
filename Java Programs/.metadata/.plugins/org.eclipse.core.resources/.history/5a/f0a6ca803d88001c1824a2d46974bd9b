@@ -8,6 +8,7 @@ public class Assignment_1 {
 	static int[][] dp = new int[1001][1001];
 	
 	static int eggDropping(int n, int k) {
+//		System.out.print(n+" A " + k + " | ");
 		if(k<=1) {
 			return k;
 		}
@@ -15,6 +16,7 @@ public class Assignment_1 {
 			return k;
 		}
 		if(dp[n][k]!=-1) {
+		System.out.println(n+" B " + k + " ? ");
 			return dp[n][k];
 		}
 		int mn=Integer.MAX_VALUE, res;
@@ -24,6 +26,7 @@ public class Assignment_1 {
 				mn=res;
 			}
 		}
+//		System.out.println(n+" C " + k);
 		dp[n][k]=mn;
 		return mn;
 	}
