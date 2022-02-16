@@ -1,0 +1,68 @@
+package com.pranav.assignments.AI;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Assignment_4 {
+
+	static int n, m;
+	
+	private boolean dfs(int dx, int dy, int x, int y, int[][] g) {
+		if(x<0 || x>=n || y<0 || y>=m || g[x][y]==1) {
+			return false;
+		}
+		g[x][y]=1;
+		if(x==dx && y==dy) {
+			return true;
+		}
+		return dfs(dx, dy, x+1, y, g) || dfs(dx, dy, x-1, y, g) 
+				|| dfs(dx, dy, x, y+1, g) || dfs(dx, dy, x, y-1, g);
+	}
+ 
+    
+    public static void main(String[] args)  {
+        Scanner sc = new Scanner( System.in );        
+ 
+        System.out.println("Enter dimensions of grid: ");
+        n = sc.nextInt();
+        m = sc.nextInt();
+ 
+        int[][] g = new int[n][m];
+        for (int i = 0; i < n; i++) {
+        	Arrays.fill(g[i], 0);        	
+        }
+ 
+        System.out.println("Input the grid: \n");
+ 
+        for (int i = 0; i < n; i++) {
+        	for (int j = 0; j < m; j++) {
+        		g[i][j] = sc.nextInt();    
+        	}  	
+        }
+        System.out.println("Enter starting coordinates: ");
+        int x1 = sc.nextInt();
+        int y1 = sc.nextInt();
+ 
+        if(x1<0 || x1>=n || y1<0 || y1>=m || g[x1][y1]==1) {
+        	System.out.println("Invalid Input");
+        	return;
+        }
+        
+        System.out.println("Enter destination coordinates: ");
+        int x2 = sc.nextInt();
+        int y2 = sc.nextInt();
+        
+        if(x2<0 || x2>=n || y2<0 || y2>=m || g[x2][y2]==1) {
+        	System.out.println("Invalid Input");
+        	return;
+        }
+        int[][] t = g;
+        Assignment_4 obj = new Assignment_4();
+        if(obj.dfs(x2, y2, x1, y1, t)==true) {
+        	System.out.println("Path Exists");
+        }else {
+        	System.out.println("Path doesn't Exist");
+        }
+    }
+
+}

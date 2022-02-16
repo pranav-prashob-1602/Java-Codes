@@ -63,9 +63,7 @@ public class Assignment_3 {
         int newColor = sc.nextInt();
         
         Assignment_3 ff = new Assignment_3();
-        if(g[x][y]!=newColor) {
-        	ff.fillGrid(g, x, y, g[x][y], newColor);            	
-        }
+        ff.fillGrid(g, x, y, g[x][y], newColor);    
         ff.display(g);
     }
 }

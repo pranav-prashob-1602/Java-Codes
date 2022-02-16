@@ -28,4 +28,5 @@
 <fullyQualifiedTypeName name="com.pranav.designPatterns.structural.facadePattern.FoodType"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
 </qualifiedTypeNameHistroy>
