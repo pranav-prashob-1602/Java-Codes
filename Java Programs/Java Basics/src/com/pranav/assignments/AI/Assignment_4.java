@@ -18,6 +18,7 @@ public class Assignment_4 {
 	static int n, m;
 	
 	private boolean dfs(int dx, int dy, int x, int y, int[][] g) {
+//		System.out.println(x+" "+ y);
 		if(x<0 || x>=n || y<0 || y>=m || g[x][y]==1) {
 			return false;
 		}
@@ -38,6 +39,7 @@ public class Assignment_4 {
 			Pair p = q.peek();
 			q.remove();
 			g[p.x][p.y]=1;
+//			System.out.println(p.x+ " " + p.y);
 			if(p.x==dx && p.y==dy) {
 				return true;
 			}
