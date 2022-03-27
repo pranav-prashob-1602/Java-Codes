@@ -1,0 +1,10 @@
+package com.pranav.designPatterns.behavioural.mementoPattern;
+
+public class MementoRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
