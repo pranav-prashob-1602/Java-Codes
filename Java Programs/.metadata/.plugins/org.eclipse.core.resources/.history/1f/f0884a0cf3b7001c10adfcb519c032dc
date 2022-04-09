@@ -1,0 +1,18 @@
+package com.pranav.designPatterns.behavioural.strategyPattern;
+
+public interface Flys {
+	String fly();
+}
+
+class itCanFly implements Flys {
+	public String fly() {
+		return "It can Fly";
+	}
+}
+
+class itCantFly implements Flys {
+	public String fly() {
+		return "It can't Fly";
+	}
+}
+

@@ -1,0 +1,5 @@
+package com.pranav.designPatterns.behavioural.strategyPattern;
+
+public interface Flys {
+	
+}
