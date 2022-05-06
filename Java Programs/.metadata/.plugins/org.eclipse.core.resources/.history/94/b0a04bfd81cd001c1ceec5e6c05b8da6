@@ -1,0 +1,43 @@
+package competitiveProgramming;
+
+import java.util.*;
+
+public class CF_1669D {
+
+	static void shinchan() {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		while(T>0) {
+			int n = sc.nextInt();
+			String s = sc.next();
+//			List<String> v = new ArrayList();
+			boolean res=true;
+			int i=0;
+			while(i<s.length()) {
+				String t="";
+				boolean b=false,r=false;
+				while(i<s.length() && s.charAt(i)!='W') {
+					b|=(s.charAt(i)=='B');
+					r|=(s.charAt(i)=='R');
+					t+=s.charAt(i);
+					i++;
+				}
+				if(t.length()>0) {
+					res&=(b & r);
+				}
+				i++;
+			}
+			if(res) {
+				System.out.println("YES");
+			}else {
+				System.out.println("NO");
+			}
+			T-=1;
+		}
+	}
+	
+	public static void main(String[] args) {
+		shinchan();
+	}
+
+}
