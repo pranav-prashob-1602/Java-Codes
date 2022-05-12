@@ -1,0 +1,47 @@
+package competitiveProgramming;
+
+import java.util.*;
+
+public class CF_1669E {
+
+	static void shinchan() {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		while(T>0) {
+			int n = sc.nextInt();
+			Map<Character, Integer> first = new HashMap();
+			Map<Character, Integer> second = new HashMap();			
+			Map<String, Integer> count = new HashMap();
+			long res=0;
+			while(n>0) {
+				String s = sc.next();
+				if(first.containsKey(s.charAt(0))) {
+					res+=first.get(s.charAt(0));
+					first.replace(s.charAt(0), first.get(s.charAt(0))+1);
+				}else {
+					first.put(s.charAt(0), 1);
+				}
+				if(second.containsKey(s.charAt(1))) {
+					res+=second.get(s.charAt(1));
+					second.replace(s.charAt(1), second.get(s.charAt(1))+1);
+				}else {
+					second.put(s.charAt(1), 1);
+				}
+				if(count.containsKey(s)) {
+					res-=count.get(s)*2;
+					count.replace(s, count.get(s)+1);
+				}else {
+					count.put(s, 1);
+				}
+				n-=1;
+			}
+			System.out.println(res);
+			T-=1;
+		}
+	}
+	
+	public static void main(String[] args) {
+		shinchan();
+	}
+
+}
