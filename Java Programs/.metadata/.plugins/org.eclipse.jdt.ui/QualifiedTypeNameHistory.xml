@@ -45,4 +45,5 @@
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="com.pranav.jdbcConnectivity.dao.Dept1DAO"/>
 <fullyQualifiedTypeName name="com.pranav.jdbcConnectivity.vo.Dept1Details"/>
+<fullyQualifiedTypeName name="com.pranav.calculator.MathUtils"/>
 </qualifiedTypeNameHistroy>
